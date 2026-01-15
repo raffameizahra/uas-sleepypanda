@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background: #1e2140;
+    color: #fff;
+}
+
+.page {
+    padding: 24px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.hamburger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search input {
+    background: #2b2f55;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #fff;
+    width: 260px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+/* CONTENT */
+.content {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 24px;
+}
+
+/* JURNAL */
+.journal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.journal-list img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* CHART CARD */
+.chart-card {
+    background: #2a2e54;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.chart-header h3 {
+    font-weight: 500;
+}
+
+.filters {
+    display: flex;
+    gap: 12px;
+}
+
+.filters select {
+    background: #1e2140;
+    border: none;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+}
+
+.chart-wrapper {
+    height: 360px;
+}
+
+/* ===== APP LAYOUT ===== */
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+}
+
+body {
+    background: #1e2140;
+    color: #fff;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    background: #272e49;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.sidebar h3 {
+    margin-bottom: 24px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: #cbd5f5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+    background: #343b63;
+    color: #fff;
+}
+
+/* ===== SIDEBAR HIDDEN ===== */
+.sidebar.hide {
+    width: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* ===== PAGE ===== */
+.page {
+    flex: 1;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.hamburger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.search input {
+    background: #2b2f55;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    background: #ccc;
+    border-radius: 50%;
+}

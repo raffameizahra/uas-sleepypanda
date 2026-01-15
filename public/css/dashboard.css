@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #20223f;
+    color: #fff;
+}
+
+.dashboard {
+    padding: 24px;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.logo img {
+    width: 36px;
+}
+
+.search-box input {
+    background: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 260px;
+    border: none;
+    outline: none;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #d9d9d9;
+}
+
+/* CARDS */
+.card {
+    background: #2a2d55;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+/* TOP CHARTS */
+.top-charts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.chart {
+    height: 260px;
+}
+
+.chart canvas {
+    width: 100% !important;
+    height: 200px !important;
+}
+
+/* STATS */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.stat p {
+    opacity: 0.8;
+    margin-bottom: 8px;
+}
+
+.stat h2 {
+    font-size: 32px;
+}
+
+/* BOTTOM CHART */
+.bottom-chart {
+    height: 300px;
+}
+
+.bottom-chart h3 {
+    margin-bottom: 16px;
+}
+
+.chart-area {
+    height: 220px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* jarak gambar & angka */
+}
+
+.stat-top img {
+    width: 32px; /* sesuaikan ukuran ikon */
+    height: auto;
+}
+
+.stat-top h2 {
+    margin: 0;
+}
+
+/* HAMBURGER */
+.hamburger {
+    font-size: 22px;
+    cursor: pointer;
+    color: #fff;
+    margin-right: 16px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #1f2445;
+    padding: 20px;
+    transition: 0.35s ease;
+    z-index: 2000;
+}
+
+.sidebar h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 10px;
+    color: #cbd5f5;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background: #2b315f;
+    color: #fff;
+}
+
+/* SIDEBAR AKTIF */
+.sidebar.active {
+    left: 0;
+}
+
+/* OVERLAY */
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 1500;
+}
+
+#overlay.active {
+    display: block;
+}

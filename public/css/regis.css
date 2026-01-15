@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* =====================
+   BACKGROUND
+===================== */
+.background {
+    width: 100%;
+    height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================
+   FRAME (HP)
+===================== */
+.frame {
+    width: 360px;
+    height: 640px;
+    border: 2px solid #334155;
+    border-radius: 6px;
+    position: relative;
+    background: transparent;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo img {
+    width: 105px;
+    margin-bottom: 6px;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* =====================
+   CONTENT
+===================== */
+.content {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cta {
+    width: 260px;
+}
+
+/* =====================
+   SUBTITLE
+===================== */
+.subtitle {
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #94a3b8;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+
+/* LOGIN */
+.btn-login {
+    background: #14b8a6;
+    color: #ffffff;
+}
+
+.btn-login:hover {
+    background: #0f9d8a;
+}
+
+/* REGISTER */
+.btn-register {
+    background: #ffffff;
+    color: #14b8a6;
+}
+
+.btn-register:hover {
+    background: #e6e6e6;
+}

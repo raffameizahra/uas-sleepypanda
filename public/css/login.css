@@ -1,0 +1,219 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", system-ui, sans-serif;
+}
+
+/* =====================
+   BACKGROUND & FRAME
+===================== */
+.background {
+    width: 100%;
+    height: 100vh;
+    background: #0f172a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame {
+    width: 360px;
+    height: 640px;
+    border: 2px solid #334155;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden; /* WAJIB */
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* =====================
+   LOGIN CONTENT
+===================== */
+.login-content {
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 260px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+/* =====================
+   FORM
+===================== */
+.input-group {
+    margin-bottom: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 42px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    padding: 0 12px;
+    color: #e5e7eb;
+    font-size: 13px;
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #14b8a6;
+}
+
+/* =====================
+   FORGOT LINK
+===================== */
+.forgot {
+    text-align: right;
+    margin-bottom: 22px;
+}
+
+.forgot a {
+    font-size: 12px;
+    color: #14b8a6;
+    text-decoration: none;
+}
+
+/* =====================
+   BUTTON
+===================== */
+
+.btn-login {
+    display: block; /* supaya bisa full lebar */
+    width: 100%; /* lebar penuh */
+    max-width: 260px; /* samakan dengan desain */
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    background: #14b8a6;
+    cursor: pointer;
+}
+
+/* =====================
+   REGISTER TEXT
+===================== */
+.register-text {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #cbd5f5;
+}
+
+.register-text a {
+    color: #14b8a6;
+    text-decoration: none;
+}
+
+/* =====================
+   FORGOT PASSWORD POPUP
+===================== */
+.forgot-popup {
+    position: absolute;
+    bottom: -280px; /* SEMBUNYI DI DALAM FRAME */
+    left: 0;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    transition: bottom 0.35s ease;
+    pointer-events: none;
+}
+
+.forgot-popup.active {
+    bottom: 0;
+    pointer-events: auto;
+}
+
+/* WRAPPER BIAR LEBAR PAS */
+.popup-inner {
+    width: 100%;
+    max-width: 355px;
+}
+
+/* ISI POPUP */
+.popup-content {
+    width: 100%;
+    height: 100%;
+    background: #0f172a;
+    border-top: 2px solid #334155;
+    padding: 22px 16px;
+    text-align: center;
+}
+
+/* ICON */
+.popup-icon img {
+    width: 60px;
+    margin-bottom: 8px;
+}
+
+/* TITLE */
+.popup-content h3 {
+    font-size: 13px;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+/* DESC */
+.popup-content p {
+    font-size: 11px;
+    color: #94a3b8;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* INPUT */
+.popup-content input {
+    width: 100%;
+    height: 40px;
+    background: #1e293b;
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+/* BUTTON */
+.popup-content button {
+    width: 100%;
+    height: 40px;
+    background: #14b8a6;
+    border: none;
+    border-radius: 6px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
